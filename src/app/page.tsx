@@ -70,7 +70,7 @@ function getPostImage(post?: SitePost | null) {
   const logo = typeof post?.content === 'object' && post?.content && typeof (post.content as any).logo === 'string'
     ? (post.content as any).logo
     : null
-  return mediaUrl || contentImage || logo || '/placeholder.svg?height=900&width=1400'
+  return mediaUrl || contentImage || logo || '/freepik-assets/placeholder-news.svg'
 }
 
 function getPostMeta(post?: SitePost | null) {

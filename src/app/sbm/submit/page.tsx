@@ -80,7 +80,7 @@ export default function SubmitBookmarkPage() {
         .slice(0, 60),
       url,
       description,
-      image: '/placeholder.svg?height=720&width=1280',
+      image: '/freepik-assets/placeholder-news.svg',
       domain,
       tags: tags.length > 0 ? tags : ['New'],
       category: category || 'General',
