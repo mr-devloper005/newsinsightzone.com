@@ -1,25 +1,67 @@
 import { NavbarShell } from '@/components/shared/navbar-shell'
 import { Footer } from '@/components/shared/footer'
+import { ContentImage } from '@/components/shared/content-image'
 
 export const CONTACT_PAGE_OVERRIDE_ENABLED = true
 
 export function ContactPageOverride() {
   return (
-    <div className="min-h-screen bg-white text-neutral-900">
+    <div className="min-h-screen bg-[#fcf7f9] text-[#2f1d2b]">
       <NavbarShell />
-      <main className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-        <h1 className="text-4xl font-bold uppercase tracking-[0.04em]">Contact Us</h1>
-        <p className="mt-6 max-w-2xl text-base leading-8 text-neutral-700">For editorial questions, announcement requests, corrections, or publishing enquiries, use the contact details below or reply through your existing author account.</p>
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
-          <div className="border border-neutral-200 p-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-neutral-500">Editorial desk</p>
-            <p className="mt-4 text-lg font-semibold">editor@example.com</p>
-          </div>
-          <div className="border border-neutral-200 p-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-neutral-500">General enquiries</p>
-            <p className="mt-4 text-lg font-semibold">contact@example.com</p>
-          </div>
-        </div>
+      <main className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+        <h1 className="text-center text-4xl font-semibold tracking-[-0.04em] text-[#3f2036] sm:text-5xl">Contact Us</h1>
+        <p className="mx-auto mt-4 max-w-3xl text-center text-sm leading-7 text-[#6a4d61]">
+          Have a media query, support request, or partnership discussion? Send your details and our press desk will respond quickly.
+        </p>
+        <section className="mt-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+          <form className="rounded-[2rem] border border-[#dcc1cb] bg-white p-6 shadow-[0_16px_44px_rgba(73,36,62,0.1)] sm:p-8">
+            <div className="grid gap-4 sm:grid-cols-2">
+              <input className="h-12 rounded-xl border border-[#dcc4cd] bg-[#fff9fb] px-4 text-sm text-[#3d2135]" placeholder="Contact Name *" />
+              <input className="h-12 rounded-xl border border-[#dcc4cd] bg-[#fff9fb] px-4 text-sm text-[#3d2135]" placeholder="Phone Number" />
+            </div>
+            <input className="mt-4 h-12 w-full rounded-xl border border-[#dcc4cd] bg-[#fff9fb] px-4 text-sm text-[#3d2135]" placeholder="Email *" />
+            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+              <select className="h-12 rounded-xl border border-[#dcc4cd] bg-[#fff9fb] px-4 text-sm text-[#3d2135]">
+                <option>What type of organization are you?</option>
+              </select>
+              <select className="h-12 rounded-xl border border-[#dcc4cd] bg-[#fff9fb] px-4 text-sm text-[#3d2135]">
+                <option>Subject: How may we help you?</option>
+              </select>
+            </div>
+            <textarea className="mt-4 min-h-[160px] w-full rounded-2xl border border-[#dcc4cd] bg-[#fff9fb] px-4 py-3 text-sm text-[#3d2135]" placeholder="Message / Comment *" />
+            <div className="mt-5 inline-flex items-center gap-2 rounded-xl border border-[#d8c3cc] bg-[#fff7fa] px-4 py-3 text-sm text-[#7c5e73]">
+              <input type="checkbox" />
+              I'm not a robot
+            </div>
+            <button type="submit" className="mt-6 inline-flex h-12 items-center justify-center rounded-xl bg-[#49243e] px-8 text-sm font-semibold text-white transition hover:bg-[#3d1d34]">
+              Submit Now
+            </button>
+          </form>
+
+          <aside className="space-y-5">
+            <div className="rounded-2xl border border-[#dcc4cd] bg-white p-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8d637f]">Telephone Hours</p>
+              <p className="mt-3 text-sm text-[#4b2a40]">Monday to Friday</p>
+              <p className="text-sm text-[#4b2a40]">8:30am to 5:00pm Pacific (PDT)</p>
+            </div>
+            <div className="rounded-2xl border border-[#dcc4cd] bg-white p-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8d637f]">Toll Free Telephone</p>
+              <p className="mt-3 text-sm text-[#4b2a40]">1-888-880-9539</p>
+              <p className="text-sm text-[#4b2a40]">(646) 417-8294</p>
+            </div>
+            <div className="rounded-2xl border border-[#dcc4cd] bg-white p-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8d637f]">US Address</p>
+              <p className="mt-3 text-sm leading-7 text-[#4b2a40]">Suite 1400 - 506 Second Avenue<br />Seattle, WA 98104, USA</p>
+            </div>
+            <div className="rounded-2xl border border-[#dcc4cd] bg-white p-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8d637f]">Canada Address</p>
+              <p className="mt-3 text-sm leading-7 text-[#4b2a40]">Suite 203 - 901 West 3rd St.<br />North Vancouver, BC V7P 3P9, Canada</p>
+            </div>
+            <div className="relative h-44 overflow-hidden rounded-2xl border border-[#dcc4cd]">
+              <ContentImage src="/freepik-assets/contact-page-business.svg" alt="Contact page style reference" fill className="object-cover" />
+            </div>
+          </aside>
+        </section>
       </main>
       <Footer />
     </div>

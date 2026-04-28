@@ -13,5 +13,5 @@ export const siteIdentity = {
 
 export const defaultAuthorProfile = {
   name: siteIdentity.name,
-  avatar: '/placeholder.svg?height=80&width=80',
+  avatar: '/freepik-assets/placeholder-user.svg',
 } as const
