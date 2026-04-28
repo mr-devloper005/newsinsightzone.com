@@ -124,7 +124,7 @@ export default function NewArticlePage() {
       slug,
       excerpt,
       content,
-      coverImage: coverImage || "/placeholder.svg?height=720&width=1280",
+      coverImage: coverImage || "/freepik-assets/placeholder-news.svg",
       author: user,
       category: category || "General",
       tags: tags.length > 0 ? tags : ["New"],

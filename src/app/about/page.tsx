@@ -1,93 +1,90 @@
-import Link from "next/link";
-import { PageShell } from "@/components/shared/page-shell";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { mockTeamMembers } from "@/data/mock-data";
-import { SITE_CONFIG } from "@/lib/site-config";
+import Link from 'next/link'
+import { Award, Globe2, Sparkles, Users } from 'lucide-react'
+import { NavbarShell } from '@/components/shared/navbar-shell'
+import { Footer } from '@/components/shared/footer'
+import { SITE_CONFIG } from '@/lib/site-config'
+import { ContentImage } from '@/components/shared/content-image'
 
-const highlights = [
-  { label: "Creators onboarded", value: "12k+" },
-  { label: "Bookmarks shared", value: "180k" },
-  { label: "Listings published", value: "8.6k" },
-];
+const stats = [
+  { label: 'Releases published', value: '25K+' },
+  { label: 'Media pickups', value: '92K+' },
+  { label: 'Partner brands', value: '1.8K' },
+]
 
-const values = [
-  { title: "Curated by people", description: "We believe trusted recommendations beat endless feeds." },
-  { title: "Designed for focus", description: "Clear, calm UI helps you find the next best resource fast." },
-  { title: "Built to share", description: "Collections make collaboration and knowledge flow effortless." },
-];
+const pillars = [
+  {
+    icon: Sparkles,
+    title: 'Editorial Clarity',
+    text: 'Every update is structured for readability, credibility, and strong narrative flow.',
+  },
+  {
+    icon: Globe2,
+    title: 'Distribution Reach',
+    text: 'Support local and global announcement campaigns through one publishing system.',
+  },
+  {
+    icon: Users,
+    title: 'Team Collaboration',
+    text: 'Built for PR teams, communication leads, and founders managing high publishing velocity.',
+  },
+  {
+    icon: Award,
+    title: 'Brand Trust',
+    text: 'Professional presentation helps your releases feel official and media ready.',
+  },
+]
 
 export default function AboutPage() {
   return (
-    <PageShell
-      title={`About ${SITE_CONFIG.name}`}
-      description={`${SITE_CONFIG.name} is a modern platform for creators, communities, and curated business discovery.`}
-      actions={
-        <>
-          <Button variant="outline" asChild>
-            <Link href="/team">Meet the Team</Link>
-          </Button>
-          <Button asChild>
-            <Link href="/contact">Contact Us</Link>
-          </Button>
-        </>
-      }
-    >
-      <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <Card className="border-border bg-card">
-          <CardContent className="space-y-4 p-6">
-            <Badge variant="secondary">Our Story</Badge>
-            <h2 className="text-2xl font-semibold text-foreground">
-              A single home for knowledge, discovery, and community.
-            </h2>
-            <p className="text-sm text-muted-foreground">
-              {SITE_CONFIG.name} brings together publishing, listings, and social bookmarking so teams can move faster
-              and keep their best resources close.
-            </p>
-            <div className="grid gap-4 sm:grid-cols-3">
-              {highlights.map((item) => (
-                <div key={item.label} className="rounded-lg border border-border bg-secondary/40 p-4">
-                  <div className="text-2xl font-semibold text-foreground">{item.value}</div>
-                  <div className="text-xs text-muted-foreground">{item.label}</div>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-        <div className="space-y-4">
-          {values.map((value) => (
-            <Card key={value.title} className="border-border bg-card">
-              <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-foreground">{value.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{value.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div>
-
-      <div className="mt-10 grid gap-6 md:grid-cols-3">
-        {mockTeamMembers.map((member) => (
-          <Card key={member.id} className="border-border bg-card transition-transform hover:-translate-y-1">
-            <CardContent className="p-6">
-              <div className="flex items-center gap-3">
-                <Avatar className="h-12 w-12">
-                  <AvatarImage src={member.avatar} alt={member.name} />
-                  <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
-                </Avatar>
-                <div>
-                  <p className="text-sm font-semibold text-foreground">{member.name}</p>
-                  <p className="text-xs text-muted-foreground">{member.role}</p>
-                </div>
+    <div className="min-h-screen bg-[#fcf7f9] text-[#2f1d2b]">
+      <NavbarShell />
+      <main className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+        <section className="rounded-[2rem] bg-[linear-gradient(130deg,#49243e_0%,#704264_62%,#bb8493_100%)] p-7 text-white sm:p-10">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f0dce5]">About us</p>
+          <h1 className="mt-3 text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">About {SITE_CONFIG.name}</h1>
+          <p className="mt-4 max-w-3xl text-sm leading-8 text-[#f3dce5]">
+            {SITE_CONFIG.name} is a media press release platform designed for modern communication teams who need fast publishing, premium presentation, and consistent distribution.
+          </p>
+          <div className="mt-8 grid gap-3 sm:grid-cols-3">
+            {stats.map((item) => (
+              <div key={item.label} className="rounded-xl border border-white/30 bg-white/10 p-4">
+                <p className="text-2xl font-semibold">{item.value}</p>
+                <p className="text-xs uppercase tracking-[0.16em] text-[#f0dce5]">{item.label}</p>
               </div>
-              <p className="mt-3 text-sm text-muted-foreground">{member.bio}</p>
-              <p className="mt-3 text-xs text-muted-foreground">{member.location}</p>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
-    </PageShell>
-  );
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-10 grid gap-6 lg:grid-cols-[1fr_1fr]">
+          <div className="space-y-4">
+            {pillars.map((item) => (
+              <article key={item.title} className="rounded-2xl border border-[#dcc4cd] bg-white p-5 shadow-[0_12px_35px_rgba(73,36,62,0.08)]">
+                <item.icon className="h-5 w-5 text-[#704264]" />
+                <h2 className="mt-3 text-xl font-semibold text-[#3a1f33]">{item.title}</h2>
+                <p className="mt-2 text-sm leading-7 text-[#65495c]">{item.text}</p>
+              </article>
+            ))}
+          </div>
+          <div className="rounded-[2rem] border border-[#dcc4cd] bg-white p-5 shadow-[0_14px_38px_rgba(73,36,62,0.1)]">
+            <div className="relative h-64 overflow-hidden rounded-2xl sm:h-72">
+              <ContentImage src="/press-assets/signup-reference.png" alt="About News Insight Zone" fill className="object-cover" />
+            </div>
+            <h3 className="mt-5 text-2xl font-semibold tracking-[-0.03em] text-[#3b2034]">Mission</h3>
+            <p className="mt-3 text-sm leading-8 text-[#65495c]">
+              Our mission is to make professional media distribution accessible, efficient, and visually strong for growing brands and established enterprises alike.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link href="/updates" className="rounded-full bg-[#49243e] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#3d1d34]">
+                Explore Latest News
+              </Link>
+              <Link href="/contact" className="rounded-full border border-[#c9a8b5] bg-[#fff7fa] px-5 py-2.5 text-sm font-semibold text-[#704264] hover:bg-[#f8e7ee]">
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  )
 }

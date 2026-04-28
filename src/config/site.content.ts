@@ -2,30 +2,28 @@ import type { TaskKey } from '@/lib/site-config'
 
 export const siteContent = {
   navbar: {
-    tagline: 'Independent news desk',
+    tagline: 'Media press release network',
   },
   footer: {
-    tagline: 'Simple publishing for press-style updates',
+    tagline: 'Trusted publishing for announcements and newsroom distribution',
   },
   hero: {
-    badge: 'Latest updates',
-    title: ['Clear publishing, simple reading, no extra noise.'],
-    description:
-      'A minimal article-style publishing template built for regular updates, announcements, and media distribution posts.',
+    badge: 'Media distribution platform',
+    title: ['The News Starts Here'],
+    description: 'Publish official announcements, distribute stories, and amplify newsroom visibility with a modern press workflow.',
     primaryCta: {
-      label: 'Browse latest posts',
+      label: 'Explore Latest News',
       href: '/updates',
     },
     secondaryCta: {
-      label: 'Contact us',
-      href: '/contact',
+      label: 'View Pricing',
+      href: '/pricing',
     },
-    searchPlaceholder: 'Search posts',
-    focusLabel: 'Latest',
-    featureCardBadge: 'editor note',
-    featureCardTitle: 'Recent updates appear directly on the homepage.',
-    featureCardDescription:
-      'The homepage works as a clean front page so new posts stay visible without decorative sections getting in the way.',
+    searchPlaceholder: 'Search releases, brands, and topics',
+    focusLabel: 'Breaking',
+    featureCardBadge: 'Featured',
+    featureCardTitle: 'Business-ready press distribution with editorial clarity.',
+    featureCardDescription: 'Discover new announcements, coverage highlights, and media-ready stories from one publishing hub.',
   },
   home: {
     metadata: {
@@ -37,45 +35,44 @@ export const siteContent = {
         'A simple publishing template for updates, announcements, and readable article pages.',
       keywords: ['newsroom posts', 'latest updates', 'announcements', 'press articles'],
     },
-    introBadge: 'About',
-    introTitle: 'A quiet publishing template made for regular updates.',
+    introBadge: 'About News Insight Zone',
+    introTitle: 'A dedicated newsroom experience for modern media distribution.',
     introParagraphs: [
-      'This template is designed for sites that publish straightforward updates and want the homepage to behave like a clean front page rather than a product landing page.',
-      'Posts are visible immediately, archives stay easy to scan, and the reading page keeps the focus on the article itself.',
-      'The interface is intentionally simple so the site feels usable, familiar, and fast to update.',
+      'News Insight Zone is built for organizations that need press-ready publishing, clear discovery, and polished presentation across every announcement.',
+      'From launch updates to investor notes and media statements, every release is structured to be readable, shareable, and discoverable.',
+      'The design supports high publishing velocity while preserving professional tone and strong editorial hierarchy.',
     ],
-    sideBadge: 'What it prioritizes',
+    sideBadge: 'What we prioritize',
     sidePoints: [
-      'Recent posts directly on the homepage.',
-      'Simple archive layout with sidebar search and recent items.',
-      'Readable article pages without comments or extra modules.',
-      'A publishing-first structure that stays easy to maintain.',
+      'Press-first homepage with clear distribution calls-to-action.',
+      'News archive that supports fast scanning and filtering.',
+      'Article pages optimized for readability and sharing.',
+      'Modular structure for consistent publishing operations.',
     ],
     primaryLink: {
-      label: 'Open archive',
+      label: 'Open Newsroom',
       href: '/updates',
     },
     secondaryLink: {
-      label: 'Contact desk',
+      label: 'Contact Media Desk',
       href: '/contact',
     },
   },
   cta: {
-    badge: 'Get in touch',
-    title: 'Use this template when publishing regular updates matters more than visual effects.',
-    description:
-      'A straightforward layout for announcements, media coverage, partner updates, and newsroom-style content.',
+    badge: 'Publish with confidence',
+    title: 'Ready to Share Your News?',
+    description: 'Launch your next announcement with trusted distribution, elegant formatting, and a newsroom-first UX.',
     primaryCta: {
-      label: 'Contact us',
-      href: '/contact',
+      label: 'Submit a Release',
+      href: '/create/mediaDistribution',
     },
     secondaryCta: {
-      label: 'View archive',
-      href: '/updates',
+      label: 'See Pricing',
+      href: '/pricing',
     },
   },
-  taskSectionHeading: 'Latest posts',
-  taskSectionDescriptionSuffix: 'Read the newest published updates.',
+  taskSectionHeading: 'Latest releases',
+  taskSectionDescriptionSuffix: 'Read the newest press announcements and newsroom updates.',
 } as const
 
 export const taskPageMetadata: Record<Exclude<TaskKey, 'comment' | 'org' | 'social'>, { title: string; description: string }> = {
@@ -108,8 +105,8 @@ export const taskPageMetadata: Record<Exclude<TaskKey, 'comment' | 'org' | 'soci
     description: 'Open PDFs and downloadable files.',
   },
   mediaDistribution: {
-    title: 'Latest updates',
-    description: 'Read the latest published updates and announcements.',
+    title: 'Latest News',
+    description: 'Explore newly published press releases, announcements, and newsroom stories.',
   },
 }
 
@@ -128,13 +125,14 @@ export const taskIntroCopy: Record<
   comment: { title: 'Comments', paragraphs: ['Commentary and response posts.'], links: [{ label: 'Home', href: '/' }] },
   org: { title: 'Organizations', paragraphs: ['Organization pages and entities.'], links: [{ label: 'Home', href: '/' }] },
   mediaDistribution: {
-    title: 'Latest updates',
+    title: 'Latest News',
     paragraphs: [
-      'This archive is designed for straightforward publishing: regular updates, announcements, and media-style posts presented in a clean reading format.',
-      'The layout stays simple so visitors can scan headlines quickly, open stories easily, and move through the archive without distraction.',
+      'This archive is designed for media distribution teams that publish announcements, press notes, and official updates at high velocity.',
+      'Use category and search surfaces to quickly discover current stories, then open each release in a clean long-form reading experience.',
     ],
     links: [
       { label: 'Home', href: '/' },
+      { label: 'Pricing', href: '/pricing' },
       { label: 'Contact', href: '/contact' },
     ],
   },
