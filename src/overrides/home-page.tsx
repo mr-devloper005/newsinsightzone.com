@@ -74,7 +74,7 @@ export async function HomePageOverride() {
     { icon: TrendingUp, label: 'Investor Updates' },
   ]
 
-  const referenceImages = ['/freepik-assets/news-media-distribution.svg', '/freepik-assets/pricing-plans.svg', '/freepik-assets/contact-page-business.svg']
+  const referenceImages = ['/freepik-assets/news-media-distribution.svg', '/freepik-assets/signup-registration.svg', '/freepik-assets/contact-page-business.svg']
 
   return (
     <div className="min-h-screen bg-[#fcf7f9] text-[#2f1d2b]">
@@ -94,9 +94,7 @@ export async function HomePageOverride() {
                 Browse Latest News
                 <ArrowRight className="h-4 w-4" />
               </Link>
-              <Link href="/pricing" className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/18">
-                View Pricing
-              </Link>
+
             </div>
           </div>
         </section>
@@ -120,10 +118,7 @@ export async function HomePageOverride() {
                   <ContentImage src={imageFromPost(post)} alt={post.title} fill className="object-cover transition duration-500 group-hover:scale-105" />
                 </div>
                 <div className="p-5">
-                  <p className="text-xs uppercase tracking-[0.18em] text-[#8d637f]">
-                    {new Date(post.publishedAt || Date.now()).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
-                  </p>
-                  <h3 className="mt-2 line-clamp-2 text-lg font-semibold leading-snug text-[#3b1f33]">{post.title}</h3>
+                  <h3 className="line-clamp-2 text-lg font-semibold leading-snug text-[#3b1f33]">{post.title}</h3>
                 </div>
               </Link>
             ))}

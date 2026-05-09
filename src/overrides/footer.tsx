@@ -18,7 +18,6 @@ export function FooterOverride() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#e1c9d2]">Primary</p>
             <div className="mt-4 space-y-3 text-sm">
               <Link href="/updates" className="block text-[#f7ebf0] hover:text-white">Latest News</Link>
-              <Link href="/pricing" className="block text-[#f7ebf0] hover:text-white">Pricing</Link>
               <Link href="/create/mediaDistribution" className="block text-[#f7ebf0] hover:text-white">Submit Release</Link>
             </div>
           </div>
@@ -27,7 +26,6 @@ export function FooterOverride() {
             <div className="mt-4 space-y-3 text-sm">
               <Link href="/about" className="block text-[#f7ebf0] hover:text-white">About Us</Link>
               <Link href="/contact" className="block text-[#f7ebf0] hover:text-white">Contact</Link>
-              <Link href="/press" className="block text-[#f7ebf0] hover:text-white">Press</Link>
             </div>
           </div>
           <div>

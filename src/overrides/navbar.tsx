@@ -11,13 +11,11 @@ export const NAVBAR_OVERRIDE_ENABLED = true
 
 const primaryLinks = [
   { label: 'Latest News', href: '/updates' },
-  { label: 'Pricing', href: '/pricing' },
 ]
 
 const secondaryLinks = [
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
-  { label: 'Press', href: '/press' },
 ]
 
 export function NavbarOverride() {
@@ -28,9 +26,6 @@ export function NavbarOverride() {
     <header className="sticky top-0 z-50 border-b border-[#8d637f]/35 bg-[linear-gradient(120deg,#49243e_0%,#704264_52%,#8b5f79_100%)] text-white shadow-[0_12px_40px_rgba(33,12,28,0.35)] backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
-          <div className="h-10 w-10 overflow-hidden rounded-full border border-white/30 bg-white/15 p-1">
-            <img src="/favicon.png?v=20260401" alt={`${SITE_CONFIG.name} logo`} className="h-full w-full object-contain" />
-          </div>
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f3dde7]">newsinsightzone.com</p>
             <p className="text-[11px] uppercase tracking-[0.2em] text-[#e7c7d4]">Media press release desk</p>
