@@ -11,7 +11,7 @@ export function FooterOverride() {
           <div>
             <p className="text-lg font-semibold">{SITE_CONFIG.name}</p>
             <p className="mt-3 max-w-sm text-sm leading-7 text-[#dcc2cc]">
-              Modern media distribution for brands, founders, and communication teams publishing timely press releases.
+              Modern media distribution for brands, founders, and communication teams publishing timely press media.
             </p>
           </div>
           <div>

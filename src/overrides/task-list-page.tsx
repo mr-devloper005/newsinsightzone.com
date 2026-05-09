@@ -41,7 +41,7 @@ export async function TaskListPageOverride({ category }: { task: TaskKey; catego
         <section className="rounded-[2rem] bg-[linear-gradient(130deg,#49243e_0%,#704264_62%,#bb8493_100%)] p-7 text-white shadow-[0_20px_55px_rgba(73,36,62,0.24)] sm:p-9">
           <p className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em]">
             <Filter className="h-3.5 w-3.5" />
-            Press release listing
+            Press media listing
           </p>
           <h1 className="mt-4 text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">Browse Latest News Releases</h1>
           <p className="mt-4 max-w-3xl text-sm leading-7 text-[#f2dce5]">

@@ -17,7 +17,7 @@ export async function TaskDetailPageOverride({ slug }: { task: TaskKey; slug: st
   const recent = (await fetchTaskPosts('mediaDistribution', 8, { fresh: true })).filter((item) => item.slug !== slug).slice(0, 3)
   const content = (post.content || {}) as Record<string, unknown>
   const html = formatRichHtml((content.body as string) || post.summary || '', 'Post body will appear here.')
-  const category = typeof content.category === 'string' ? content.category : 'Press Release'
+  const category = typeof content.category === 'string' ? content.category : 'Press Media'
   const published = new Date(post.publishedAt || Date.now()).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
   const media = Array.isArray(post.media) ? post.media : []
   const imageFromMedia = media.find((item) => typeof item?.url === 'string' && item.url)?.url

@@ -28,7 +28,7 @@ export function NavbarOverride() {
         <Link href="/" className="flex items-center gap-3">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f3dde7]">newsinsightzone.com</p>
-            <p className="text-[11px] uppercase tracking-[0.2em] text-[#e7c7d4]">Media press release desk</p>
+            <p className="text-[11px] uppercase tracking-[0.2em] text-[#e7c7d4]">Media press media desk</p>
           </div>
         </Link>
 

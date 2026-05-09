@@ -22,12 +22,12 @@ export function LoginPageOverride() {
               Sign In To Your Account
             </h1>
             <p className="text-lg leading-8 text-[#6a4d61] max-w-lg">
-              Access your newsroom dashboard, manage press releases, and track your media coverage.
+              Access your newsroom dashboard, manage press media, and track your media coverage.
             </p>
             
             <div className="space-y-4">
               {[
-                'Publish press releases instantly',
+                'Publish press media instantly',
                 'Track media coverage and analytics',
                 'Manage your newsroom profile'
               ].map((feature) => (

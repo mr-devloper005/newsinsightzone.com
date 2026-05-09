@@ -43,7 +43,7 @@ export default function AboutPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#f0dce5]">About us</p>
           <h1 className="mt-3 text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">About {SITE_CONFIG.name}</h1>
           <p className="mt-4 max-w-3xl text-sm leading-8 text-[#f3dce5]">
-            {SITE_CONFIG.name} is a media press release platform designed for modern communication teams who need fast publishing, premium presentation, and consistent distribution.
+            {SITE_CONFIG.name} is a media press media platform designed for modern communication teams who need fast publishing, premium presentation, and consistent distribution.
           </p>
           <div className="mt-8 grid gap-3 sm:grid-cols-3">
             {stats.map((item) => (

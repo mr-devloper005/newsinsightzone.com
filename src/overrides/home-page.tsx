@@ -83,7 +83,7 @@ export async function HomePageOverride() {
         <section className="bg-[linear-gradient(135deg,#49243e_0%,#704264_58%,#bb8493_100%)] text-white">
           <div className="mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 lg:py-24">
             <p className="inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em]">
-              Media press release platform
+              Media press media platform
             </p>
             <h1 className="mx-auto mt-5 max-w-4xl text-4xl font-semibold tracking-[-0.04em] sm:text-6xl">The News Starts Here</h1>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-[#f4dde6] sm:text-lg">
@@ -215,7 +215,7 @@ export async function HomePageOverride() {
               Publish your next release with a newsroom-first layout built for credibility, discovery, and conversion.
             </p>
             <Link href="/create/mediaDistribution" className="mt-7 inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#49243e] hover:bg-[#f7e9ef]">
-              Submit Press Release
+              Submit Press Media
             </Link>
           </div>
         </section>
