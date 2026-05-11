@@ -39,24 +39,6 @@ export function ContactPageOverride() {
           </form>
 
           <aside className="space-y-5">
-            <div className="rounded-2xl border border-[#dcc4cd] bg-white p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8d637f]">Telephone Hours</p>
-              <p className="mt-3 text-sm text-[#4b2a40]">Monday to Friday</p>
-              <p className="text-sm text-[#4b2a40]">8:30am to 5:00pm Pacific (PDT)</p>
-            </div>
-            <div className="rounded-2xl border border-[#dcc4cd] bg-white p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8d637f]">Toll Free Telephone</p>
-              <p className="mt-3 text-sm text-[#4b2a40]">1-888-880-9539</p>
-              <p className="text-sm text-[#4b2a40]">(646) 417-8294</p>
-            </div>
-            <div className="rounded-2xl border border-[#dcc4cd] bg-white p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8d637f]">US Address</p>
-              <p className="mt-3 text-sm leading-7 text-[#4b2a40]">Suite 1400 - 506 Second Avenue<br />Seattle, WA 98104, USA</p>
-            </div>
-            <div className="rounded-2xl border border-[#dcc4cd] bg-white p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8d637f]">Canada Address</p>
-              <p className="mt-3 text-sm leading-7 text-[#4b2a40]">Suite 203 - 901 West 3rd St.<br />North Vancouver, BC V7P 3P9, Canada</p>
-            </div>
             <div className="relative h-44 overflow-hidden rounded-2xl border border-[#dcc4cd]">
               <ContentImage src="/freepik-assets/contact-page-business.svg" alt="Contact page style reference" fill className="object-cover" />
             </div>

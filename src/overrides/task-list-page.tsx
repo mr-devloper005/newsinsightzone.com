@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { CalendarDays, Filter, Search } from 'lucide-react'
+import { Filter, Search } from 'lucide-react'
 import { NavbarShell } from '@/components/shared/navbar-shell'
 import { Footer } from '@/components/shared/footer'
 import { fetchTaskPosts } from '@/lib/task-data'
@@ -41,7 +41,7 @@ export async function TaskListPageOverride({ category }: { task: TaskKey; catego
         <section className="rounded-[2rem] bg-[linear-gradient(130deg,#49243e_0%,#704264_62%,#bb8493_100%)] p-7 text-white shadow-[0_20px_55px_rgba(73,36,62,0.24)] sm:p-9">
           <p className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em]">
             <Filter className="h-3.5 w-3.5" />
-            Press release listing
+            Press media listing
           </p>
           <h1 className="mt-4 text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">Browse Latest News Releases</h1>
           <p className="mt-4 max-w-3xl text-sm leading-7 text-[#f2dce5]">
@@ -101,11 +101,7 @@ export async function TaskListPageOverride({ category }: { task: TaskKey; catego
                   </p>
                   <h2 className="mt-2 line-clamp-2 text-xl font-semibold leading-snug text-[#3c2034]">{post.title}</h2>
                   <p className="mt-3 line-clamp-3 text-sm leading-7 text-[#64495c]">{excerpt(post.summary)}</p>
-                  <div className="mt-4 flex items-center justify-between text-xs text-[#8d637f]">
-                    <span className="inline-flex items-center gap-1">
-                      <CalendarDays className="h-3.5 w-3.5" />
-                      {new Date(post.publishedAt || Date.now()).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
-                    </span>
+                  <div className="mt-4 flex items-center justify-end text-xs text-[#8d637f]">
                     <Link href={`/updates/${post.slug}`} className="font-semibold text-[#704264] hover:text-[#49243e]">Read More</Link>
                   </div>
                 </div>

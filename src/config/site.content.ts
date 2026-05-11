@@ -2,7 +2,7 @@ import type { TaskKey } from '@/lib/site-config'
 
 export const siteContent = {
   navbar: {
-    tagline: 'Media press release network',
+    tagline: 'Media press media network',
   },
   footer: {
     tagline: 'Trusted publishing for announcements and newsroom distribution',
@@ -106,7 +106,7 @@ export const taskPageMetadata: Record<Exclude<TaskKey, 'comment' | 'org' | 'soci
   },
   mediaDistribution: {
     title: 'Latest News',
-    description: 'Explore newly published press releases, announcements, and newsroom stories.',
+    description: 'Explore newly published press media, announcements, and newsroom stories.',
   },
 }
 

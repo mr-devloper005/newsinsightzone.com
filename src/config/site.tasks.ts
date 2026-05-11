@@ -3,7 +3,7 @@ export const siteTaskDefinitions = [
     key: 'mediaDistribution',
     label: 'Latest News',
     route: '/updates',
-    description: 'Press releases and newsroom announcements.',
+    description: 'Press media and newsroom announcements.',
     contentType: 'mediaDistribution',
     enabled: true,
   },
