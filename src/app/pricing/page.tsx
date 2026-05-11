@@ -25,7 +25,7 @@ const plans = [
   },
 ]
 
-const addOns = ['Writing assistance', 'Press release translation', 'Editorial review', 'Priority newsroom support']
+const addOns = ['Writing assistance', 'Press media translation', 'Editorial review', 'Priority newsroom support']
 
 const faqs = [
   {

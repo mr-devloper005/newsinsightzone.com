@@ -22,12 +22,12 @@ export function RegisterPageOverride() {
               Create Your Newsroom Account
             </h1>
             <p className="text-lg leading-8 text-[#6a4d61] max-w-lg">
-              Start publishing press releases, managing media coverage, and building your newsroom presence.
+              Start publishing press media, managing media coverage, and building your newsroom presence.
             </p>
             
             <div className="space-y-4">
               {[
-                'Instant press release publishing',
+                'Instant press media publishing',
                 'Media tracking and analytics',
                 'Professional newsroom profile',
                 'Global distribution network'

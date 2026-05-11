@@ -74,7 +74,7 @@ export async function HomePageOverride() {
     { icon: TrendingUp, label: 'Investor Updates' },
   ]
 
-  const referenceImages = ['/freepik-assets/news-media-distribution.svg', '/freepik-assets/pricing-plans.svg', '/freepik-assets/contact-page-business.svg']
+  const referenceImages = ['/freepik-assets/news-media-distribution.svg', '/freepik-assets/signup-registration.svg', '/freepik-assets/contact-page-business.svg']
 
   return (
     <div className="min-h-screen bg-[#fcf7f9] text-[#2f1d2b]">
@@ -83,7 +83,7 @@ export async function HomePageOverride() {
         <section className="bg-[linear-gradient(135deg,#49243e_0%,#704264_58%,#bb8493_100%)] text-white">
           <div className="mx-auto max-w-6xl px-4 py-20 text-center sm:px-6 lg:py-24">
             <p className="inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em]">
-              Media press release platform
+              Media press media platform
             </p>
             <h1 className="mx-auto mt-5 max-w-4xl text-4xl font-semibold tracking-[-0.04em] sm:text-6xl">The News Starts Here</h1>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-[#f4dde6] sm:text-lg">
@@ -94,9 +94,7 @@ export async function HomePageOverride() {
                 Browse Latest News
                 <ArrowRight className="h-4 w-4" />
               </Link>
-              <Link href="/pricing" className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/18">
-                View Pricing
-              </Link>
+
             </div>
           </div>
         </section>
@@ -120,10 +118,7 @@ export async function HomePageOverride() {
                   <ContentImage src={imageFromPost(post)} alt={post.title} fill className="object-cover transition duration-500 group-hover:scale-105" />
                 </div>
                 <div className="p-5">
-                  <p className="text-xs uppercase tracking-[0.18em] text-[#8d637f]">
-                    {new Date(post.publishedAt || Date.now()).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
-                  </p>
-                  <h3 className="mt-2 line-clamp-2 text-lg font-semibold leading-snug text-[#3b1f33]">{post.title}</h3>
+                  <h3 className="line-clamp-2 text-lg font-semibold leading-snug text-[#3b1f33]">{post.title}</h3>
                 </div>
               </Link>
             ))}
@@ -220,7 +215,7 @@ export async function HomePageOverride() {
               Publish your next release with a newsroom-first layout built for credibility, discovery, and conversion.
             </p>
             <Link href="/create/mediaDistribution" className="mt-7 inline-flex rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#49243e] hover:bg-[#f7e9ef]">
-              Submit Press Release
+              Submit Press Media
             </Link>
           </div>
         </section>
